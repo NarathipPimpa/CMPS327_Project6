@@ -7252,7 +7252,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 5, y: -1}
-  m_SizeDelta: {x: 500, y: 50}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &885734281
 MonoBehaviour:
@@ -7276,10 +7276,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -11805,7 +11805,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4921cb18b742d84696b5d6c4d48f5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
   damage: 50
   zDamage: 50
   countText: {fileID: 885734281}
@@ -17791,7 +17790,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4921cb18b742d84696b5d6c4d48f5a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
   damage: 50
   zDamage: 50
   countText: {fileID: 885734281}
