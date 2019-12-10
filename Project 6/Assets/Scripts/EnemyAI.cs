@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 
 public enum EnemyState { CHASE,MOVING,DEFAULT};
@@ -9,6 +10,7 @@ public enum EnemyState { CHASE,MOVING,DEFAULT};
 [RequireComponent(typeof(NavMeshAgent))]
 public class EnemyAI : MonoBehaviour
 {
+    public Text countText;
     public int HP = 100;
     GameObject player;
     NavMeshAgent agent;
@@ -86,6 +88,8 @@ public class EnemyAI : MonoBehaviour
         {
             if (HP <= 0)
             {
+                Counting.HP += 20;
+                countText.text = "Fruits Collected = " + Counting.numFruitsCollected.ToString() + "\nHP = " + Counting.HP.ToString();
                 // Disable all Renderers and Colliders
                 Renderer[] allRenderers = gameObject.GetComponentsInChildren<Renderer>();
                 foreach (Renderer c in allRenderers) c.enabled = false;

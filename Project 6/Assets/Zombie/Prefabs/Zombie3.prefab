@@ -935,6 +935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92cd0f9b1f6bba445a5357d028387382, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  countText: {fileID: 0}
   HP: 100
   chaseDistance: 20
 --- !u!195 &1486984292
